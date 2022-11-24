@@ -1,0 +1,29 @@
+$white: #fff;
+$black: #111;
+$gray: #ccc;
+$gray-dark: #999;
+$blue: #40517a;
+$purple: #60407a;
+$orange: rgb(255, 74, 29);
+$glass: rgba(255, 255, 255, 0.8);
+$glass-light: rgba(255, 255, 255, 0.5);
+$glass-lighter: rgba(255, 255, 255, 0.3);
+$glass-dark: rgba(0, 0, 0, 0.6);
+$glass-darker: rgba(0, 0, 0, 0.3);
+
+// export the variables
+
+:export {
+    white: $white;
+    black: $black;
+    gray: $gray;
+    gray-dark: $gray-dark;
+    blue: $blue;
+    purple: $purple;
+    orange: $orange;
+    glass: $glass;
+    glass-light: $glass-light;
+    glass-lighter: $glass-lighter;
+    glass-dark: $glass-dark;
+    glass-darker: $glass-darker;
+}

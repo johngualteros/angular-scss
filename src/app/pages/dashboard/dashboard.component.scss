@@ -1,0 +1,132 @@
+@import "../../utils/scss/global/global.scss";
+@import "../../utils/scss/mixins/mixins.scss";
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: $white;
+  color: $black;
+  padding: 30px;
+}
+
+.dark {
+  background-color: $black;
+  color: $white;
+}
+
+.container-dashboard {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 10;
+  background-color: $glass-darker;
+}
+
+.siderbar {
+  width: 18%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $glass-dark;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 20px;
+  h1 {
+    text-align: center;
+  }
+  .container-actions {
+    width: 100%;
+    height: 90%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      @include btn($white, $black, 10px, 14px);
+    }
+    a {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: $white;
+      font-size: 18px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      padding: 10px;
+      span {
+        margin-right: 10px;
+      }
+
+      &:hover {
+        color: $orange;
+        background-color: #000;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+}
+
+.header {
+  width: calc(100% - 18%);
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $glass-dark;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  input {
+    background-color: transparent;
+    border: 1px solid rgb(31, 31, 31);
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: $white;
+    outline: none;
+  }
+  .container-modes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    height: 100%;
+    i{
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        &:hover{
+            color: $orange;
+        }
+    }
+  }
+}
+
+.main{
+    width: calc(100% - 18%);
+    height: calc(100% - 70px);
+    position: absolute;
+    top: 70px;
+    right: 0;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    div{
+      background-color: $glass-darker;
+      border-radius: 10px;
+      padding: 20px;
+    }
+}

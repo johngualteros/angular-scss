@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div class="container" [ngClass]="_isDark? 'dark' : ''">
+    <div class="left-container">
+        <h1>IndeFocu,</h1>
+        <h1>The next gen</h1>
+        <h1>Phone Mobile</h1>
+        <br>
+        <p>we made quality lens for any type of photography to</p>
+        <p>bring light to a fixed focal point from what you see.</p>
+        <p>throught the viewfinder</p>
+
+        <div class="container-button">
+            <button><i class="bi bi-arrow-right"></i></button>
+            <h3>View All collections</h3>
+        </div>
+    </div>
+    <div class="right-container">
+        <div class="container-phone">
+            <div class="container-image-phone">
+                <div class="container-camera"></div>
+                <div class="hour">
+                    <h2>{{ todaysDataTime }}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-section2-index></app-section2-index>
+<app-section3-index></app-section3-index>

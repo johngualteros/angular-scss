@@ -1,0 +1,36 @@
+@import './utils/scss/global/global.scss';
+
+.blur{
+    display: block;
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    left: 0%;
+    top: 60%;
+    z-index: 5;
+    filter: blur(100px);
+    background-color: $blue;
+
+    &::after{
+        content: '';
+        position: fixed;
+        width: 250px;
+        height: 250px;
+        background-color: $purple;
+        left: 100%;
+        top: -30%;
+        filter: blur(50px);
+    }
+
+    &::before{
+        content: '';
+        position: fixed;
+        width: 600px;
+        height: 300px;
+        background-color: $orange;
+        right: -220%;
+        top: -40%;
+        filter: blur(40px);
+    }
+
+}

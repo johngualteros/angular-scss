@@ -1,0 +1,30 @@
+<div class="header" [ngClass]="isDark? 'dark' : ''">
+  <h1>Indefocu</h1>
+
+  <div class="nav">
+    <a>Collections</a>
+
+    <div class="dropdown">
+      <a>Why Focus <span class="arrow">></span></a>
+      <div class="dropdown-content">
+        <h3>
+          This is very sample
+        </h3>
+        <p>focus offers a new futures solution and is very flexible and economically accessible</p>
+      </div>
+    </div>
+
+    <a>Faq</a>
+    <a>Questions</a>
+  </div>
+
+  <div class="actions">
+    <!-- <a routerLink="/login"> -->
+      <button class="btn-login" routerLink="/login">Login</button>
+    <!-- </a> -->
+    <div class="container-modes">
+      <i class="bi bi-brightness-high" (click)="setDarkMode(false)"></i>
+      <i class="bi bi-moon" (click)="setDarkMode(true)"></i>
+    </div>
+  </div>
+</div>

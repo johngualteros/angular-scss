@@ -1,0 +1,18 @@
+@mixin btn($background, $color, $radius, $size) {
+    background-color: $background;
+    color: $color;
+    border-radius: $radius;
+    font-size: $size;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    &:hover {
+        background-color: darken($background, 10%);
+    }
+}
+
+:export {
+    btn: btn
+}

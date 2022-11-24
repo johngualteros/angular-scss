@@ -1,5 +1,10 @@
 # NgrxAngularScss
 
+![](./angular15.png)
+![](./angular15_2.png)
+
+### cant add more things why angular 15 not is compatible with libraries
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
 ## Development server
